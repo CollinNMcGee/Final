@@ -1,3 +1,10 @@
+/**
+* @file main.cpp
+* @brief prompts for file name, calls the other 2 functions.
+* @Author Collin McGee
+*
+*/
+
 #include <cstdlib>
 #include <cctype>
 #include <stdio.h>

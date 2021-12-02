@@ -1,3 +1,9 @@
+/**
+* @file CountChar.h
+* @brief reads through the file to find the number of characters
+* @param pName
+*/
+
 #include <string>
 #include <fstream>
 #include <iostream>

@@ -1,3 +1,9 @@
+/**
+* @file CountLine.h
+* @brief reads through the file to find the number of lines
+* @param pName
+*/
+
 #include <string>
 #include <fstream>
 #include <iostream>
