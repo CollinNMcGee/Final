@@ -1,7 +1,13 @@
-g++ -g -wall -o count  countLine.h countChar.h main.cpp
+all: main docs cppcheck valgrind
+
+main:
+	g++ -g -Wall -o count  countLine.h countChar.h main.cpp
+
 docs:
 	doxygen ./Doxyfile
-cppcheck.out.xml: main.cpp countLine.h countChar.h
-	cppcheck -q --error-exitcode=1 countLine.h countChar.h main.cpp
+
+cppcheck:
+	cppcheck --file-list=checktest.txt
+
 valgrind:
-	valgrind countLine.h countChar.h main.cpp
+	valgrind --leak-check=yes ./count
